@@ -26,7 +26,7 @@ const getStockPrice = async (symbol) => {
         const latestData = timeSeries[latestTimestamp];
         const price = latestData['1. open'];
 
-        console.log(`The latest price of ${symbol} is $${price}`);
+        console.log(`The latest price of ${symbol} at ${latestTimestamp} is $${price}`);
     } catch (error) {
         console.error('Error fetching stock price:', error);
     }
